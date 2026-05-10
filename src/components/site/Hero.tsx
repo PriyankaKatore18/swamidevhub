@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
+import heroImg from "@/assets/hero-mockup.jpg";
 
 const slides = [
   { eyebrow: "Premium Web Studio", title: "Building Premium\nDigital Experiences", sub: "We craft high-performance websites that elevate brands and convert visitors into loyal customers." },
@@ -75,34 +76,9 @@ export function Hero() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="relative hidden lg:block"
         >
-          <div className="absolute -inset-10 -z-10 rounded-[40px] opacity-40 blur-3xl" style={{ background: "var(--gradient-gold)" }} />
+          <div className="absolute -inset-10 -z-10 rounded-[40px] opacity-50 blur-3xl" style={{ background: "var(--gradient-gold)" }} />
           <div className="glass-card relative overflow-hidden rounded-[28px] p-2 shadow-luxe animate-float">
-            <div className="flex items-center gap-1.5 px-4 py-3">
-              <span className="h-3 w-3 rounded-full bg-destructive/70" />
-              <span className="h-3 w-3 rounded-full bg-gold" />
-              <span className="h-3 w-3 rounded-full bg-emerald-400/70" />
-              <span className="ml-3 text-xs text-muted-foreground">swamidevhub.com</span>
-            </div>
-            <div className="aspect-[4/3] rounded-2xl border border-border bg-gradient-to-br from-card to-ink p-6">
-              <div className="flex items-center justify-between">
-                <div className="h-2 w-20 rounded bg-gold/60" />
-                <div className="flex gap-1">
-                  <span className="h-2 w-10 rounded bg-muted" />
-                  <span className="h-2 w-10 rounded bg-muted" />
-                  <span className="h-2 w-10 rounded bg-muted" />
-                </div>
-              </div>
-              <div className="mt-6 grid grid-cols-3 gap-3">
-                <div className="col-span-2 h-32 rounded-xl bg-gradient-to-br from-gold/30 to-transparent" />
-                <div className="space-y-3">
-                  <div className="h-14 rounded-xl bg-card" />
-                  <div className="h-14 rounded-xl bg-card" />
-                </div>
-              </div>
-              <div className="mt-4 grid grid-cols-3 gap-3">
-                {[0,1,2].map(k => <div key={k} className="h-20 rounded-xl border border-border bg-card/60" />)}
-              </div>
-            </div>
+            <img src={heroImg} alt="Premium web design mockup by Swami Dev Hub" width={1280} height={1280} className="aspect-[4/3] w-full rounded-2xl object-cover" />
           </div>
           <motion.div
             initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.6 }}
