@@ -1,5 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Linkedin, Phone, Mail, MessageCircle } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
+
+const Instagram = (p: any) => (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...p}><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>);
+const Facebook = (p: any) => (<svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M13 22v-8h3l1-4h-4V7.5c0-1.2.4-2 2-2h2V2.2c-.4 0-1.6-.2-3-.2-3 0-5 1.8-5 5v3H6v4h3v8h4z"/></svg>);
+const Linkedin = (p: any) => (<svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.59 0h4.37v1.91h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 6.99V22h-4.56v-6.21c0-1.48-.03-3.39-2.07-3.39-2.07 0-2.39 1.62-2.39 3.29V22H7.81V8z"/></svg>);
 
 export function Footer() {
   return (
