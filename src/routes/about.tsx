@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { Reveal, SectionTitle } from "@/components/site/Reveal";
 import { CTA } from "@/components/site/CTA";
+import studioImg from "@/assets/about-studio.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

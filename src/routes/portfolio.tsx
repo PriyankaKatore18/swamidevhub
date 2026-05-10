@@ -3,6 +3,13 @@ import { SiteLayout } from "@/components/site/Layout";
 import { SectionTitle, Reveal } from "@/components/site/Reveal";
 import { CTA } from "@/components/site/CTA";
 import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
+import aurum from "@/assets/proj-aurum.jpg";
+import maison from "@/assets/proj-maison.jpg";
+import northrail from "@/assets/proj-northrail.jpg";
+import lumiere from "@/assets/proj-lumiere.jpg";
+import atlas from "@/assets/proj-atlas.jpg";
+import kintsugi from "@/assets/proj-kintsugi.jpg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -19,15 +26,15 @@ export const Route = createFileRoute("/portfolio")({
 const cats = ["All", "E-commerce", "Business", "Portfolio", "Landing Pages", "Redesign"] as const;
 
 const projects = [
-  { t: "Aurum Jewels", c: "E-commerce", grad: "from-amber-500/40 to-rose-500/30" },
-  { t: "Maison Atelier", c: "Business", grad: "from-yellow-500/40 to-emerald-500/30" },
-  { t: "NorthRail Studio", c: "Portfolio", grad: "from-orange-400/40 to-fuchsia-500/30" },
-  { t: "Lumière Hotel", c: "Landing Pages", grad: "from-amber-400/40 to-cyan-500/30" },
-  { t: "Atlas Capital", c: "Business", grad: "from-yellow-600/40 to-blue-500/30" },
-  { t: "Kintsugi Co.", c: "E-commerce", grad: "from-rose-400/40 to-amber-500/30" },
-  { t: "Praxis Legal", c: "Redesign", grad: "from-yellow-400/40 to-zinc-500/30" },
-  { t: "Velvet&Co", c: "E-commerce", grad: "from-fuchsia-500/40 to-amber-400/30" },
-  { t: "Heritage Estates", c: "Business", grad: "from-amber-700/40 to-emerald-700/30" },
+  { t: "Aurum Jewels", c: "E-commerce", img: aurum, year: "2025" },
+  { t: "Maison Atelier", c: "Business", img: maison, year: "2025" },
+  { t: "NorthRail Studio", c: "Portfolio", img: northrail, year: "2024" },
+  { t: "Lumière Hotel", c: "Landing Pages", img: lumiere, year: "2025" },
+  { t: "Atlas Capital", c: "Business", img: atlas, year: "2024" },
+  { t: "Kintsugi Co.", c: "E-commerce", img: kintsugi, year: "2026" },
+  { t: "Praxis Legal", c: "Redesign", img: atlas, year: "2024" },
+  { t: "Velvet & Co.", c: "E-commerce", img: aurum, year: "2026" },
+  { t: "Heritage Estates", c: "Business", img: maison, year: "2025" },
 ];
 
 function Portfolio() {
@@ -51,14 +58,22 @@ function Portfolio() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {list.map((p, i) => (
-              <Reveal key={p.t} delay={i*0.04}>
-                <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${p.grad} transition duration-700 group-hover:scale-110`} />
-                  <div className="absolute inset-x-4 bottom-4 glass-card rounded-xl p-4">
-                    <p className="text-[11px] uppercase tracking-widest text-gold">{p.c}</p>
-                    <h3 className="mt-1 font-display text-2xl">{p.t}</h3>
+              <Reveal key={p.t + i} delay={i*0.04}>
+                <article className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border">
+                  <img src={p.img} alt={p.t} loading="lazy" width={896} height={1120}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent opacity-95" />
+                  <div className="absolute inset-x-5 top-5 flex items-center justify-between text-xs">
+                    <span className="rounded-full border border-gold/40 bg-ink/60 px-3 py-1 uppercase tracking-widest text-gold">{p.c}</span>
+                    <span className="text-muted-foreground">{p.year}</span>
                   </div>
-                </div>
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
+                    <h3 className="font-display text-2xl">{p.t}</h3>
+                    <span className="grid h-10 w-10 place-items-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold-gradient group-hover:text-ink">
+                      <ArrowUpRight size={16}/>
+                    </span>
+                  </div>
+                </article>
               </Reveal>
             ))}
           </div>
