@@ -26,7 +26,7 @@ export function Footer() {
               { Icon: MessageCircle, href: "https://wa.me/918446079635" },
             ].map(({ Icon, href }, i) => (
               <a key={i} href={href} className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition hover:border-gold hover:text-gold">
-                <Icon size={16} />
+                <Icon width={16} height={16} />
               </a>
             ))}
           </div>
