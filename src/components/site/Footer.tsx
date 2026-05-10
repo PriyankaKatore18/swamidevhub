@@ -55,7 +55,7 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><Phone size={14} className="text-gold"/> 8446079635</li>
             <li className="flex items-center gap-2"><Phone size={14} className="text-gold"/> 8767980311</li>
-            <li className="flex items-center gap-2"><Mail size={14} className="text-gold"/> swamisamarthweb18@gmail.com</li>
+            <li className="flex items-center gap-2" suppressHydrationWarning><Mail size={14} className="text-gold"/><span suppressHydrationWarning>swamisamarthweb18@gmail.com</span></li>
           </ul>
           <form className="mt-5 flex overflow-hidden rounded-full border border-border bg-card/60">
             <input placeholder="Your email" className="flex-1 bg-transparent px-4 py-2 text-sm outline-none placeholder:text-muted-foreground"/>
