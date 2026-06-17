@@ -157,48 +157,65 @@ export const blogPosts = [
 
 export const packages = [
   {
-    name: "Basic",
-    price: "9,999",
+    name: "Business Website Plan",
+    price: "39,999",
     features: [
-      "Clean, mobile-friendly single-page website",
-      "Free Domain (.in or .com)",
-      "3 Months Free Hosting",
-      "Free SSL Certificate",
-      "1+3 Pages Website",
-      "Responsive & Mobile-Friendly Design",
-      "In 24 Hours Delivery",
-      "Whatsapp integration",
-      "Mail Integration (Professional design included)"
-    ],
-    popular: false
-  },
-  {
-    name: "Standard",
-    price: "14,999",
-    features: [
-      "Free Domain (.in or .com)",
-      "6 Months Free Hosting",
-      "Free SSL Certificate",
-      "1+5 Pages Website",
-      "Responsive & Mobile-Friendly Design",
-      "In 24 Hours Delivery",
-      "Whatsapp integration",
-      "Mail Integration (Professional design included)"
+      "Frontend + Backend Development",
+      "Up to 10 Pages Website",
+      "Admin Panel",
+      "Database Integration",
+      "User Login / Signup System",
+      "Contact Form with Database",
+      "SEO Optimized Structure",
+      "Responsive Mobile Design",
+      "Free Domain",
+      "1 Year Hosting",
+      "SSL Certificate",
+      "WhatsApp Integration",
+      "Email Integration",
+      "Delivery in 5-7 Days"
     ],
     popular: true
   },
   {
-    name: "Advance",
-    price: "24,999",
+    name: "Startup Web Application Plan",
+    price: "69,999",
     features: [
-      "Free Domain (.in or .com)",
-      "1 Year Free Hosting",
-      "Free SSL Certificate",
-      "1+6 Pages Website",
-      "Responsive & Mobile-Friendly Design",
-      "In 24 Hours Delivery",
-      "Whatsapp integration",
-      "Mail Integration (Professional design included)"
+      "Full Stack Web Application",
+      "React / Modern Frontend",
+      "Backend API Development",
+      "Secure Database Integration",
+      "Admin Dashboard",
+      "User Authentication System",
+      "Payment Gateway Integration",
+      "Dynamic Pages",
+      "File Upload System",
+      "API Integration",
+      "Free Domain",
+      "1 Year Hosting",
+      "SSL Certificate",
+      "Delivery in 10-14 Days"
+    ],
+    popular: false
+  },
+  {
+    name: "Enterprise Software Plan",
+    price: "2,49,999",
+    features: [
+      "Complete Custom Software Development",
+      "Frontend + Backend + Database",
+      "Custom UI/UX Design",
+      "Advanced Admin Dashboard",
+      "Role Based Authentication",
+      "REST API Development",
+      "Payment Gateway Integration",
+      "Cloud Deployment (AWS / Vercel / DigitalOcean)",
+      "High Security Architecture",
+      "Performance Optimization",
+      "Free Domain",
+      "1 Year Hosting",
+      "SSL Certificate",
+      "Delivery in 3-6 Weeks"
     ],
     popular: false
   }

@@ -11,7 +11,7 @@ const Packages = () => {
       <VideoBreadcrumbBanner
         breadcrumb="Home / Package Plans"
         heading="Website Package Plans"
-        subtitle="Select a package that matches your stage of growth—each option includes everything you need to launch a professional website."
+        subtitle="Select a package that matches your stage of growth - each option includes everything you need to launch a professional website."
         videoSrc=""
         height="short"
         align="center"
@@ -42,10 +42,10 @@ const Packages = () => {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { icon: '⚡', title: '24 Hour Delivery', desc: 'Lightning-fast turnaround' },
-                { icon: '📱', title: 'Mobile Responsive', desc: 'Works on all devices' },
-                { icon: '🔒', title: 'Free SSL', desc: 'Secure & trusted' },
-                { icon: '🌐', title: 'Free Domain', desc: '.in or .com included' }
+                { icon: '01', title: 'Custom Build', desc: 'Each package is tailored to your project' },
+                { icon: '02', title: 'Responsive Design', desc: 'Looks great on mobile, tablet, and desktop' },
+                { icon: '03', title: 'Secure Setup', desc: 'SSL, authentication, and safe data handling' },
+                { icon: '04', title: 'Launch Support', desc: 'Deployment guidance after the build is done' }
               ].map((feature, index) => (
                 <motion.div
                   key={feature.title}
