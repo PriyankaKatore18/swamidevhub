@@ -29,30 +29,19 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-black/80 backdrop-blur-xl border-b border-cyan-400/30 shadow-lg shadow-black/40'
+            ? 'bg-black/80 backdrop-blur-xl border-b border-yellow-400/30 shadow-lg shadow-black/40'
             : 'bg-gradient-to-b from-black/90 via-black/60 to-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
+            {/* Logo - text only */}
             <Link
               to="/"
-              className="inline-flex items-center gap-3 group"
+              className="text-[#ffd33d] font-bold text-xl sm:text-2xl tracking-tight hover:text-yellow-300 transition-colors"
               data-testid="navbar-logo"
-              aria-label={siteInfo.name}
             >
-              <img
-                src={siteInfo.logoPath}
-                alt=""
-                aria-hidden="true"
-                className="h-11 w-11 sm:h-12 sm:w-12 rounded-2xl object-cover border border-white/10 shadow-lg shadow-black/30"
-                loading="eager"
-                decoding="async"
-              />
-              <span className="text-[#1db4c5] font-bold text-xl sm:text-2xl tracking-tight group-hover:text-cyan-300 transition-colors">
-                {siteInfo.name}
-              </span>
+              {siteInfo.name}
             </Link>
 
             {/* Desktop Navigation */}
@@ -63,7 +52,7 @@ const Navbar = () => {
                   to={link.path}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                     isActivePath(link.path)
-                      ? 'bg-[#1db4c5] text-black shadow-md shadow-cyan-500/40'
+                      ? 'bg-[#ffd33d] text-black shadow-md shadow-yellow-500/40'
                       : 'text-gray-300 hover:bg-zinc-800'
                   }`}
                   data-testid={`nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
@@ -82,8 +71,8 @@ const Navbar = () => {
                 className="relative group"
                 data-testid="try-for-free-button"
               >
-                <div className="absolute inset-0 bg-[#1db4c5] rounded-xl blur opacity-80 group-hover:opacity-100 transition"></div>
-                <div className="relative bg-[#1db4c5] text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-transform shadow-lg shadow-cyan-500/40">
+                <div className="absolute inset-0 bg-[#ffd33d] rounded-xl blur opacity-80 group-hover:opacity-100 transition"></div>
+                <div className="relative bg-[#ffd33d] text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-transform shadow-lg shadow-yellow-500/40">
                   Try For Free
                 </div>
               </a>
@@ -118,7 +107,7 @@ const Navbar = () => {
                     to={link.path}
                     className={`block px-4 py-3 rounded-lg text-base font-medium transition ${
                       isActivePath(link.path)
-                        ? 'bg-[#1db4c5] text-black'
+                        ? 'bg-[#ffd33d] text-black'
                         : 'text-gray-200 hover:bg-zinc-800'
                     }`}
                     data-testid={`mobile-nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
@@ -130,7 +119,7 @@ const Navbar = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block bg-[#1db4c5] text-black px-4 py-3 rounded-lg font-semibold text-center mt-4"
+                  className="block bg-[#ffd33d] text-black px-4 py-3 rounded-lg font-semibold text-center mt-4"
                   data-testid="mobile-try-for-free-button"
                 >
                   Try For Free

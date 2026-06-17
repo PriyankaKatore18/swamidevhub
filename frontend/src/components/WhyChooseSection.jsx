@@ -31,7 +31,7 @@ const WhyChooseSection = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-10 leading-tight"
             >
-              Why Choose <span className="text-[#1db4c5]">{siteInfo.name}?</span>
+              Why Choose <span className="text-[#ffd33d]">{siteInfo.name}?</span>
             </motion.h2>
 
             <div className="space-y-0 border-t border-zinc-700">
@@ -48,10 +48,10 @@ const WhyChooseSection = () => {
                       className="why-choose-section__trigger w-full flex items-center justify-between py-5 text-left gap-4 group"
                       aria-expanded={isOpen}
                     >
-                      <span className="text-lg font-bold text-white group-hover:text-[#1db4c5] transition-colors">
+                      <span className="text-lg font-bold text-white group-hover:text-[#ffd33d] transition-colors">
                         {index + 1}. {item.title}
                       </span>
-                      <span className="flex-shrink-0 text-zinc-400 group-hover:text-[#1db4c5] transition-transform duration-200">
+                      <span className="flex-shrink-0 text-zinc-400 group-hover:text-[#ffd33d] transition-transform duration-200">
                         {isOpen ? (
                           <ChevronDown className="w-5 h-5" />
                         ) : (

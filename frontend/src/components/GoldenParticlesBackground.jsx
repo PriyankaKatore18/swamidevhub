@@ -49,7 +49,7 @@ const GoldenParticlesBackground = () => {
                 Math.sin((t / 1000 + p.twinkleOffset) * 0.8));
 
         ctx.beginPath();
-        ctx.fillStyle = `rgba(29, 180, 197, ${alpha})`;
+        ctx.fillStyle = `rgba(255, 211, 61, ${alpha})`;
         ctx.arc(p.x * width, p.y * height, p.r, 0, Math.PI * 2);
         ctx.fill();
       });

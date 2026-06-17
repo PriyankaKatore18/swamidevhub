@@ -19,7 +19,7 @@ const SocialFeed = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-[#1db4c5] rounded-2xl mb-6 shadow-lg shadow-cyan-500/40">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-[#ffd33d] rounded-2xl mb-6 shadow-lg shadow-yellow-500/40">
               <Instagram className="w-10 h-10 text-black" />
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
@@ -32,7 +32,7 @@ const SocialFeed = () => {
               href="https://www.instagram.com/webakoof"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-[#1db4c5] text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 hover:bg-cyan-400 transition-transform shadow-lg shadow-cyan-500/40"
+              className="inline-flex items-center space-x-2 bg-[#ffd33d] text-black px-8 py-4 rounded-xl font-semibold hover:scale-105 hover:bg-yellow-400 transition-transform shadow-lg shadow-yellow-500/40"
               data-testid="follow-instagram-btn"
             >
               <Instagram className="w-5 h-5" />
@@ -89,7 +89,7 @@ const SocialFeed = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-white mb-4">
-              Stay Connected With Swami Dev Hub
+              Stay Connected With Swami Web
             </h2>
             <p className="text-zinc-300 mb-8 text-lg">
               Be the first to see new launches, design ideas, and exclusive offers by following our social channels.
@@ -98,11 +98,11 @@ const SocialFeed = () => {
               href="https://www.instagram.com/webakoof"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#1db4c5] text-black font-semibold rounded-xl hover:scale-105 hover:bg-cyan-400 transition-transform shadow-lg shadow-cyan-500/40"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#ffd33d] text-black font-semibold rounded-xl hover:scale-105 hover:bg-yellow-400 transition-transform shadow-lg shadow-yellow-500/40"
               data-testid="follow-instagram-cta"
             >
               <Instagram className="w-5 h-5 mr-2" />
-              Follow Swami Dev Hub on Instagram
+              Follow @webakoof
             </a>
           </motion.div>
         </div>

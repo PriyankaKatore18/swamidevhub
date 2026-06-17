@@ -1,24 +1,27 @@
 export const siteInfo = {
-  name: "Swami Dev Hub",
-  tagline: "Swami Dev Hub | High-converting business websites in 24 hours",
-  logoPath: "/assets/misc/swami-dev-hub-logo.png",
+  name: "Swami Web",
+  tagline: "High-converting business websites in 24 hours",
+  logoPath: "/assets/misc/logo.png",
   heroImagePath: "/assets/hero/hero-image.png",
   heroBannerPath: "/assets/hero/banner.png",
   aboutIntroImagePath: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=450&fit=crop&q=80",
   aboutBreadcrumbBgPath: "/assets/hero/banner.png",
   footerBgClass: "bg-black",
-  phone: "8446079635",
+  phone: "+91 9307533577",
+  phoneSecondary: "+91 9307533577",
   whatsappNumber: "918446079635",
   whatsappMessage: "book a demo wensite for your business",
   email: "swamidevhub@gmail.com",
   address: "We work remotely with clients across India, so you can get your website built from anywhere.",
-  copyright: "Copyright © 2025 All rights reserved by Swami Dev Hub",
-  description: "Swami Dev Hub delivers fast, high-converting business websites with modern responsive design, free domain, SSL, and managed hosting — all professionally launched within 24 hours."
+  workingHours: "Mon - Fri 9:00 AM - 6:00 PM",
+  copyright: "Copyright © 2025 All rights reserved By Swami Web",
+  description: "Swami Web delivers fast, high-converting business websites with modern responsive design, free domain, SSL, and managed hosting — all professionally launched within 24 hours."
 };
 
 export const navLinks = [
   { name: "Home", path: "/" },
-  { name: "About Swami Dev Hub", path: "/about-swami-dev-hub" },
+  { name: "About Swami Web", path: "/about-swami-web" },
+  { name: "Live Website Preview", path: "/live-website-preview" },
   { name: "Package Plans", path: "/package-plans" },
   { name: "Contact", path: "/contact" }
 ];
@@ -26,7 +29,7 @@ export const navLinks = [
 export const techStack = [
   { name: "HTML", icon: "Code2", color: "from-orange-500 to-red-500" },
   { name: "CSS", icon: "Paintbrush", color: "from-blue-500 to-cyan-500" },
-  { name: "Javascript", icon: "FileCode", color: "from-cyan-500 to-orange-500" },
+  { name: "Javascript", icon: "FileCode", color: "from-yellow-500 to-amber-500" },
   { name: "Wordpress", icon: "Layout", color: "from-blue-600 to-indigo-600" },
   { name: "Shopify", icon: "ShoppingBag", color: "from-green-500 to-emerald-500" },
   { name: "Python", icon: "Terminal", color: "from-blue-400 to-cyan-400" }
@@ -41,12 +44,12 @@ export const testimonials = [
   {
     name: "Priya Sharma",
     rating: 5,
-    text: "Very professional team. The website is responsive and looks great on all devices. Highly recommend Swami Dev Hub!"
+    text: "Very professional team. The website is responsive and looks great on all devices. Highly recommend Swami Web!"
   },
   {
     name: "Amit Patel",
     rating: 5,
-    text: "Great experience working with Swami Dev Hub. Fast delivery, excellent support, and amazing results."
+    text: "Great experience working with Swami Web. Fast delivery, excellent support, and amazing results."
   },
   {
     name: "Sneha Desai",
@@ -88,10 +91,10 @@ export const blogPosts = [
       <h3>Key Elements of Responsive Design</h3>
       <p>A truly responsive website adapts its layout, images, and functionality to provide an optimal viewing experience. This includes flexible grids, responsive images, and CSS media queries that adjust content based on screen size.</p>
       
-      <h3>The Swami Dev Hub Approach</h3>
-      <p>At Swami Dev Hub, every website we create is built mobile-first. We ensure your site looks stunning and functions perfectly on devices of all sizes, from smartphones to large desktop monitors. Our responsive designs are tested across multiple devices to guarantee a flawless user experience.</p>
+      <h3>The Swami Web Approach</h3>
+      <p>At Swami Web, every website we create is built mobile-first. We ensure your site looks stunning and functions perfectly on devices of all sizes, from smartphones to large desktop monitors. Our responsive designs are tested across multiple devices to guarantee a flawless user experience.</p>
       
-      <p>Don't let an outdated, non-responsive website hold your business back. Contact Swami Dev Hub today and get a modern, mobile-responsive website delivered in just 24 hours!</p>
+      <p>Don't let an outdated, non-responsive website hold your business back. Contact Swami Web today and get a modern, mobile-responsive website delivered in just 24 hours!</p>
     `
   },
   {
@@ -120,10 +123,10 @@ export const blogPosts = [
       <h3>Voice Search Optimization</h3>
       <p>With the rise of voice assistants, optimizing for conversational queries and question-based searches is increasingly important. Structure your content to answer common questions directly.</p>
       
-      <h3>How Swami Dev Hub Helps</h3>
-      <p>Every website we build at Swami Dev Hub is SEO-optimized from the ground up. We implement clean code, fast loading times, proper heading structures, meta tags, and mobile responsiveness—all factors that search engines love.</p>
+      <h3>How Swami Web Helps</h3>
+      <p>Every website we build at Swami Web is SEO-optimized from the ground up. We implement clean code, fast loading times, proper heading structures, meta tags, and mobile responsiveness—all factors that search engines love.</p>
       
-      <p>Ready to improve your search rankings? Get an SEO-friendly website from Swami Dev Hub in just 24 hours!</p>
+      <p>Ready to improve your search rankings? Get an SEO-friendly website from Swami Web in just 24 hours!</p>
     `
   },
   {
@@ -153,127 +156,58 @@ export const blogPosts = [
       <h3>Domain Extensions in 2025</h3>
       <p>While .com remains the most recognized extension, alternatives like .in (for India), .co, .io (for tech companies), and industry-specific extensions like .tech or .store are gaining acceptance. Choose an extension that fits your business and audience.</p>
       
-      <h3>Free Domain with Swami Dev Hub</h3>
-      <p>Great news! Every Swami Dev Hub package includes a free domain name (.in or .com). Our team will help you brainstorm and register the perfect domain for your business as part of our 24-hour website delivery service.</p>
+      <h3>Free Domain with Swami Web</h3>
+      <p>Great news! Every Swami Web package includes a free domain name (.in or .com). Our team will help you brainstorm and register the perfect domain for your business as part of our 24-hour website delivery service.</p>
       
-      <p>Ready to establish your online presence? Get started with Swami Dev Hub today and receive your free domain, hosting, and a professionally designed website—all delivered in just 24 hours!</p>
+      <p>Ready to establish your online presence? Get started with Swami Web today and receive your free domain, hosting, and a professionally designed website—all delivered in just 24 hours!</p>
     `
   }
 ];
 
 export const packages = [
   {
-    name: "Basic Plan",
+    name: "Basic",
     price: "9,999",
     features: [
-      "Clean mobile-friendly single page website",
+      "Clean, mobile-friendly single-page website",
       "Free Domain (.in or .com)",
       "3 Months Free Hosting",
       "Free SSL Certificate",
-      "Up to 3 Pages",
-      "Responsive Mobile Design",
-      "WhatsApp Integration",
-      "Contact Form",
-      "Delivery in 24-48 Hours"
+      "1+3 Pages Website",
+      "Responsive & Mobile-Friendly Design",
+      "In 24 Hours Delivery",
+      "Whatsapp integration",
+      "Mail Integration (Professional design included)"
     ],
     popular: false
   },
   {
-    name: "Standard Plan",
+    name: "Standard",
     price: "14,999",
     features: [
-      "Professional multi-page website",
       "Free Domain (.in or .com)",
       "6 Months Free Hosting",
       "Free SSL Certificate",
-      "Up to 5 Pages Website",
-      "Responsive Mobile Design",
-      "WhatsApp Integration",
-      "Email Integration",
-      "Contact Form + Lead Capture",
-      "Delivery in 2-3 Days"
+      "1+5 Pages Website",
+      "Responsive & Mobile-Friendly Design",
+      "In 24 Hours Delivery",
+      "Whatsapp integration",
+      "Mail Integration (Professional design included)"
     ],
-    popular: false
+    popular: true
   },
   {
-    name: "Advanced Plan",
+    name: "Advance",
     price: "24,999",
     features: [
-      "Professional business website",
       "Free Domain (.in or .com)",
       "1 Year Free Hosting",
       "Free SSL Certificate",
-      "Up to 6 Pages Website",
-      "Responsive & SEO Friendly Design",
-      "WhatsApp Integration",
-      "Email Integration",
-      "Contact Form + Database Storage",
-      "Basic Analytics Setup",
-      "Delivery in 3-4 Days"
-    ],
-    popular: false
-  },
-  {
-    name: "Business Website Plan",
-    price: "39,999",
-    features: [
-      "Frontend + Backend Development",
-      "Up to 10 Pages Website",
-      "Admin Panel",
-      "Database Integration",
-      "User Login / Signup System",
-      "Contact Form with Database",
-      "SEO Optimized Structure",
-      "Responsive Mobile Design",
-      "Free Domain",
-      "1 Year Hosting",
-      "SSL Certificate",
-      "WhatsApp Integration",
-      "Email Integration",
-      "Delivery in 5-7 Days"
-    ],
-    popular: true,
-    badge: "MOST POPULAR"
-  },
-  {
-    name: "Startup Web Application Plan",
-    price: "69,999",
-    features: [
-      "Full Stack Web Application",
-      "React / Modern Frontend",
-      "Backend API Development",
-      "Secure Database Integration",
-      "Admin Dashboard",
-      "User Authentication System",
-      "Payment Gateway Integration",
-      "Dynamic Pages",
-      "File Upload System",
-      "API Integration",
-      "Free Domain",
-      "1 Year Hosting",
-      "SSL Certificate",
-      "Delivery in 10-14 Days"
-    ],
-    popular: false
-  },
-  {
-    name: "Enterprise Software Plan",
-    price: "2,49,999",
-    features: [
-      "Complete Custom Software Development",
-      "Frontend + Backend + Database",
-      "Custom UI/UX Design",
-      "Advanced Admin Dashboard",
-      "Role Based Authentication",
-      "REST API Development",
-      "Payment Gateway Integration",
-      "Cloud Deployment (AWS / Vercel / DigitalOcean)",
-      "High Security Architecture",
-      "Performance Optimization",
-      "Free Domain",
-      "1 Year Hosting",
-      "SSL Certificate",
-      "Delivery in 3-6 Weeks"
+      "1+6 Pages Website",
+      "Responsive & Mobile-Friendly Design",
+      "In 24 Hours Delivery",
+      "Whatsapp integration",
+      "Mail Integration (Professional design included)"
     ],
     popular: false
   }
@@ -293,7 +227,7 @@ export const demoWebsites = [
   {
     name: "Realestate",
     imagePath: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=800&fit=crop&q=80",
-    link: "https://elitestaypg.com"
+    link: "https://drive.google.com/drive/folders/1_iPLnT6fY0kUnBqDgHCL42ey2w1RCTmU?usp=sharing"
   },
   {
     name: "Grampanchayat",
@@ -343,7 +277,7 @@ export const demoCategories = [
   {
     name: "Real Estate",
     icon: "Building2",
-    link: "https://elitestaypg.com"
+    link: "https://drive.google.com/drive/folders/1_iPLnT6fY0kUnBqDgHCL42ey2w1RCTmU?usp=sharing"
   },
   {
     name: "Gram Panchayat",
@@ -380,8 +314,8 @@ export const demoCategories = [
 export const aboutContent = {
   founder: {
     name: "Vedant Raut",
-    title: "Founder, Swami Dev Hub",
-    bio: "Vedant Raut is the founder of Swami Dev Hub, focused on delivering fast, affordable, and high‑quality websites for growing businesses. With a strong belief that every brand deserves a powerful online presence, he built Swami Dev Hub to make professional websites accessible within just 24 hours—without compromising on design or performance.",
+    title: "Founder, Swami Web",
+    bio: "Vedant Raut is the founder of Swami Web, focused on delivering fast, affordable, and high‑quality websites for growing businesses. With a strong belief that every brand deserves a powerful online presence, he built Swami Web to make professional websites accessible within just 24 hours—without compromising on design or performance.",
     image: "/assets/misc/icon-10.svg"
   },
   vision: "To become a trusted partner for rapid web development, empowering businesses of all sizes to establish a strong digital presence within 24 hours.",

@@ -13,7 +13,7 @@ const BlogPost = () => {
       <div className="min-h-screen flex items-center justify-center bg-black text-white">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
-          <Link to="/blog" className="text-[#1db4c5] hover:text-cyan-300 font-semibold">
+          <Link to="/blog" className="text-[#ffd33d] hover:text-yellow-300 font-semibold">
             ← Back to Blog
           </Link>
         </div>
@@ -32,7 +32,7 @@ const BlogPost = () => {
           >
             <Link
               to="/blog"
-              className="inline-flex items-center space-x-2 text-[#1db4c5] hover:text-cyan-300 font-semibold mb-8 transition"
+              className="inline-flex items-center space-x-2 text-[#ffd33d] hover:text-yellow-300 font-semibold mb-8 transition"
               data-testid="back-to-blog-link"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -112,7 +112,7 @@ const BlogPost = () => {
                     <Calendar className="w-4 h-4" />
                     <span>{relatedPost.date}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-[#1db4c5] transition">
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#ffd33d] transition">
                     {relatedPost.title}
                   </h3>
                 </div>

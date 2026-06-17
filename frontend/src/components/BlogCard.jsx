@@ -32,13 +32,13 @@ const BlogCard = ({ post, index }) => {
           <Calendar className="w-4 h-4" />
           <span>{post.date}</span>
         </div>
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#1db4c5] transition">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#ffd33d] transition">
           {post.title}
         </h3>
         <p className="text-zinc-300 mb-4 line-clamp-2 flex-1">{post.excerpt}</p>
         <Link
           to={`/blog/${post.slug}`}
-          className="inline-flex items-center space-x-2 text-[#1db4c5] font-semibold hover:text-cyan-300 transition"
+          className="inline-flex items-center space-x-2 text-[#ffd33d] font-semibold hover:text-yellow-300 transition"
           data-testid={`blog-read-more-${index}`}
         >
           <span>Read More</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { blogPosts, siteInfo } from '../data/siteData';
+import { blogPosts } from '../data/siteData';
 import BlogCard from '../components/BlogCard';
 
 const Blog = () => {
@@ -15,7 +15,7 @@ const Blog = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">
-              {siteInfo.name} Insights
+              Swami Web Insights
             </h1>
             <p className="text-xl text-zinc-300 max-w-3xl mx-auto">
               Practical articles on websites, marketing, and strategy to help your business grow online.
@@ -51,7 +51,7 @@ const Blog = () => {
             </p>
             <a
               href="/"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#1db4c5] text-black font-semibold rounded-xl hover:scale-105 hover:bg-cyan-400 transition-transform shadow-lg shadow-cyan-500/40"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#ffd33d] text-black font-semibold rounded-xl hover:scale-105 hover:bg-yellow-400 transition-transform shadow-lg shadow-yellow-500/40"
               data-testid="subscribe-newsletter-cta"
             >
               Subscribe Now

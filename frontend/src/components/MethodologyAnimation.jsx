@@ -31,7 +31,7 @@ const MethodologyAnimation = ({ centerText = 'Our Process' }) => {
               cy="200"
               r="150"
               fill="none"
-              stroke="rgba(29, 180, 197, 0.3)"
+              stroke="rgba(255, 211, 61, 0.3)"
               strokeWidth="1.5"
             />
           </svg>

@@ -1,34 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 import { siteInfo, navLinks } from '../data/siteData';
 
 const Footer = () => {
   const whatsappLink = `https://wa.me/${siteInfo.whatsappNumber}?text=${encodeURIComponent(siteInfo.whatsappMessage)}`;
 
   return (
-    <footer className={`${siteInfo.footerBgClass} text-white pt-16 pb-8 border-t border-cyan-500/20`}>
+    <footer className={`${siteInfo.footerBgClass} text-white pt-16 pb-8 border-t border-yellow-500/20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
           <div className="space-y-4">
             <Link
               to="/"
-              className="inline-flex items-center gap-3 group"
+              className="text-[#ffd33d] font-bold text-xl hover:text-yellow-300 transition-colors inline-block"
               data-testid="footer-logo"
-              aria-label={siteInfo.name}
             >
-              <img
-                src={siteInfo.logoPath}
-                alt=""
-                aria-hidden="true"
-                className="h-12 w-12 sm:h-14 sm:w-14 rounded-2xl object-cover border border-white/10 shadow-lg shadow-black/30"
-                loading="eager"
-                decoding="async"
-              />
-              <span className="text-[#1db4c5] font-bold text-xl hover:text-cyan-300 transition-colors">
-                {siteInfo.name}
-              </span>
+              {siteInfo.name}
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               {siteInfo.description}
@@ -43,7 +32,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-[#1db4c5] transition text-sm"
+                    className="text-gray-300 hover:text-[#ffd33d] transition text-sm"
                     data-testid={`footer-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                   >
                     {link.name}
@@ -58,22 +47,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-[#1db4c5] flex-shrink-0 mt-0.5" />
-                <div className="text-sm">
-                  <a
-                    href={`tel:${siteInfo.phone}`}
-                    className="text-gray-300 hover:text-[#1db4c5] transition block"
-                    data-testid="footer-phone-primary"
-                  >
-                    {siteInfo.phone}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-[#1db4c5] flex-shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-[#ffd33d] flex-shrink-0 mt-0.5" />
                 <a
                   href={`mailto:${siteInfo.email}`}
-                  className="text-gray-300 hover:text-[#1db4c5] transition text-sm"
+                  className="text-gray-300 hover:text-[#ffd33d] transition text-sm"
                   data-testid="footer-email"
                 >
                   {siteInfo.email}
@@ -82,14 +59,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Address */}
+          {/* Address & Hours */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Where We Work From</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#1db4c5] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#ffd33d] flex-shrink-0 mt-0.5" />
                 <p className="text-gray-300 text-sm leading-relaxed" data-testid="footer-address">
                   {siteInfo.address}
+                </p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Clock className="w-5 h-5 text-[#ffd33d] flex-shrink-0 mt-0.5" />
+                <p className="text-gray-300 text-sm" data-testid="footer-hours">
+                  {siteInfo.workingHours}
                 </p>
               </li>
             </ul>
@@ -107,14 +90,14 @@ const Footer = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#1db4c5] transition text-sm"
+                className="text-gray-400 hover:text-[#ffd33d] transition text-sm"
                 data-testid="footer-whatsapp-link"
               >
                 WhatsApp
               </a>
               <a
                 href={`mailto:${siteInfo.email}`}
-                className="text-gray-400 hover:text-[#1db4c5] transition text-sm"
+                className="text-gray-400 hover:text-[#ffd33d] transition text-sm"
                 data-testid="footer-email-link"
               >
                 Email Us

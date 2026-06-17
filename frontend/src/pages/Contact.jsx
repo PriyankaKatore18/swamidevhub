@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'sonner';
 import { siteInfo } from '../data/siteData';
@@ -71,7 +71,7 @@ const Contact = () => {
             >
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">
-                  Contact {siteInfo.name}
+                  Contact Swami Web
                 </h2>
                 <p className="text-zinc-300 leading-relaxed mb-8">
                   We’re available to answer questions, discuss your ideas, and guide you through getting a professional website live in 24 hours.
@@ -80,30 +80,37 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#1db4c5] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-cyan-500/40">
+                  <div className="w-12 h-12 bg-[#ffd33d] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-yellow-500/40">
                     <Phone className="w-6 h-6 text-black" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Phone</h3>
                     <a
                       href={`tel:${siteInfo.phone}`}
-                      className="text-zinc-300 hover:text-[#1db4c5] transition block"
+                      className="text-zinc-300 hover:text-[#ffd33d] transition block"
                       data-testid="contact-phone-primary"
                     >
                       {siteInfo.phone}
+                    </a>
+                    <a
+                      href={`tel:${siteInfo.phoneSecondary}`}
+                      className="text-zinc-300 hover:text-[#ffd33d] transition block"
+                      data-testid="contact-phone-secondary"
+                    >
+                      {siteInfo.phoneSecondary}
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#1db4c5] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-cyan-500/40">
+                  <div className="w-12 h-12 bg-[#ffd33d] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-yellow-500/40">
                     <Mail className="w-6 h-6 text-black" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Email</h3>
                     <a
                       href={`mailto:${siteInfo.email}`}
-                      className="text-zinc-300 hover:text-[#1db4c5] transition"
+                      className="text-zinc-300 hover:text-[#ffd33d] transition"
                       data-testid="contact-email"
                     >
                       {siteInfo.email}
@@ -112,7 +119,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#1db4c5] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-cyan-500/40">
+                  <div className="w-12 h-12 bg-[#ffd33d] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-yellow-500/40">
                     <MapPin className="w-6 h-6 text-black" />
                   </div>
                   <div>
@@ -123,6 +130,17 @@ const Contact = () => {
                   </div>
                 </div>
 
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-[#ffd33d] rounded-xl flex items-center justify-center flex-shrink-0 shadow-md shadow-yellow-500/40">
+                    <Clock className="w-6 h-6 text-black" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white mb-1">Working Hours</h3>
+                    <p className="text-zinc-300" data-testid="contact-hours">
+                      {siteInfo.workingHours}
+                    </p>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
@@ -134,7 +152,7 @@ const Contact = () => {
             >
               <form
                 onSubmit={handleSubmit}
-                className="bg-zinc-900/90 rounded-2xl p-8 shadow-lg shadow-black/60 border border-cyan-500/30 backdrop-blur-xl"
+                className="bg-zinc-900/90 rounded-2xl p-8 shadow-lg shadow-black/60 border border-yellow-500/30 backdrop-blur-xl"
                 data-testid="contact-form"
               >
                 <h3 className="text-2xl font-bold text-white mb-6">Send Us a Message</h3>
@@ -150,7 +168,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#1db4c5] transition"
+                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#ffd33d] transition"
                       placeholder="John Doe"
                       data-testid="contact-name-input"
                     />
@@ -166,7 +184,7 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#1db4c5] transition"
+                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#ffd33d] transition"
                       placeholder="Enter your phone number"
                       data-testid="contact-phone-input"
                     />
@@ -182,7 +200,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#1db4c5] transition"
+                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#ffd33d] transition"
                       placeholder="john@example.com"
                       data-testid="contact-email-input"
                     />
@@ -198,7 +216,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="5"
-                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#1db4c5] transition resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-zinc-700 bg-black/60 text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#ffd33d] transition resize-none"
                       placeholder="Tell us about your project..."
                       data-testid="contact-message-input"
                     ></textarea>
@@ -207,7 +225,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#1db4c5] text-black py-4 rounded-xl font-semibold hover:scale-105 hover:bg-cyan-400 transition-transform disabled:opacity-50 disabled:hover:scale-100 flex items-center justify-center space-x-2 shadow-lg shadow-cyan-500/40"
+                    className="w-full bg-[#ffd33d] text-black py-4 rounded-xl font-semibold hover:scale-105 hover:bg-yellow-400 transition-transform disabled:opacity-50 disabled:hover:scale-100 flex items-center justify-center space-x-2 shadow-lg shadow-yellow-500/40"
                     data-testid="contact-submit-btn"
                   >
                     <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>

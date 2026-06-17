@@ -24,15 +24,15 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(29, 180, 197, 0.2) 0%, rgba(29, 180, 197, 0.05) 50%, rgba(0, 0, 0, 0.4) 100%);
-  border: 2px solid rgba(29, 180, 197, 0.4);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 211, 61, 0.2) 0%, rgba(255, 211, 61, 0.05) 50%, rgba(0, 0, 0, 0.4) 100%);
+  border: 2px solid rgba(255, 211, 61, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
   box-shadow: 
-    0 0 40px rgba(29, 180, 197, 0.3),
-    0 0 80px rgba(29, 180, 197, 0.15),
+    0 0 40px rgba(255, 211, 61, 0.3),
+    0 0 80px rgba(255, 211, 61, 0.15),
     inset 0 0 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
 }
@@ -44,7 +44,7 @@
 .methodology-animation__center-label {
   font-size: 0.9375rem;
   font-weight: 700;
-  color: rgba(29, 180, 197, 1);
+  color: rgba(255, 211, 61, 1);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -68,7 +68,7 @@
 }
 
 .methodology-animation__circle-path {
-  filter: drop-shadow(0 0 6px rgba(29, 180, 197, 0.2));
+  filter: drop-shadow(0 0 6px rgba(255, 211, 61, 0.2));
 }
 
 /* Step cards positioned exactly on the circle */
@@ -88,29 +88,29 @@
   height: 80px;
   border-radius: 50%;
   background: rgba(24, 24, 27, 0.95);
-  border: 2px solid rgba(29, 180, 197, 0.3);
+  border: 2px solid rgba(255, 211, 61, 0.3);
   backdrop-filter: blur(12px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 
     0 4px 16px rgba(0, 0, 0, 0.5),
-    0 0 0 0 rgba(29, 180, 197, 0),
+    0 0 0 0 rgba(255, 211, 61, 0),
     inset 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .methodology-animation__step-card:hover {
   background: rgba(39, 39, 42, 0.98);
-  border-color: rgba(29, 180, 197, 0.6);
+  border-color: rgba(255, 211, 61, 0.6);
   transform: scale(1.1);
   box-shadow: 
     0 8px 24px rgba(0, 0, 0, 0.6),
-    0 0 24px rgba(29, 180, 197, 0.3),
+    0 0 24px rgba(255, 211, 61, 0.3),
     inset 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .methodology-animation__step-number {
   font-size: 0.75rem;
   font-weight: 800;
-  color: rgba(29, 180, 197, 0.9);
+  color: rgba(255, 211, 61, 0.9);
   letter-spacing: 0.1em;
   font-variant-numeric: tabular-nums;
   line-height: 1;

@@ -3,32 +3,17 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowRight,
-  Code2,
-  Paintbrush,
-  FileCode,
-  Layout,
-  ShoppingBag,
-  Terminal,
   Star,
   Send
 } from 'lucide-react';
 import axios from 'axios';
 import { toast } from 'sonner';
-import { siteInfo, techStack, testimonials } from '../data/siteData';
+import { siteInfo, testimonials } from '../data/siteData';
 import TestimonialCard from '../components/TestimonialCard';
 import MethodologyAnimation from '../components/MethodologyAnimation';
 import SectionEffect from '../components/SectionEffect';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-
-const iconMap = {
-  Code2,
-  Paintbrush,
-  FileCode,
-  Layout,
-  ShoppingBag,
-  Terminal
-};
 
 const heroSlides = [
   {
@@ -107,13 +92,13 @@ const Home = () => {
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                 >
-                  <div className="inline-flex items-center gap-2 rounded-full bg-zinc-900/70 border border-cyan-500/40 px-3 py-1 mb-5 text-xs sm:text-sm text-cyan-300">
-                    <span className="w-2 h-2 rounded-full bg-[#1db4c5] animate-pulse" />
+                  <div className="inline-flex items-center gap-2 rounded-full bg-zinc-900/70 border border-yellow-500/40 px-3 py-1 mb-5 text-xs sm:text-sm text-yellow-300">
+                    <span className="w-2 h-2 rounded-full bg-[#ffd33d] animate-pulse" />
                     <span>Fast, modern websites for serious brands</span>
                   </div>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
                     {heroSlides[activeSlide].title}{' '}
-                    <span className="text-[#1db4c5]">
+                    <span className="text-[#ffd33d]">
                       {heroSlides[activeSlide].highlight}
                     </span>
                   </h1>
@@ -129,8 +114,8 @@ const Home = () => {
                   className="group relative inline-flex items-center justify-center"
                   data-testid="hero-view-packages-btn"
                 >
-                  <div className="absolute inset-0 bg-[#1db4c5] rounded-xl blur opacity-80 group-hover:opacity-100 transition"></div>
-                  <div className="relative bg-[#1db4c5] text-black px-8 py-4 rounded-xl font-semibold flex items-center space-x-2 hover:scale-105 transition-transform shadow-lg shadow-cyan-500/40">
+                  <div className="absolute inset-0 bg-[#ffd33d] rounded-xl blur opacity-80 group-hover:opacity-100 transition"></div>
+                  <div className="relative bg-[#ffd33d] text-black px-8 py-4 rounded-xl font-semibold flex items-center space-x-2 hover:scale-105 transition-transform shadow-lg shadow-yellow-500/40">
                     <span>View Website Packages</span>
                     <ArrowRight className="w-5 h-5" />
                   </div>
@@ -139,7 +124,7 @@ const Home = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-zinc-700 text-zinc-100 font-semibold rounded-xl hover:bg-zinc-900 hover:border-cyan-400 hover:text-cyan-300 transition-all"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-zinc-700 text-zinc-100 font-semibold rounded-xl hover:bg-zinc-900 hover:border-yellow-400 hover:text-yellow-300 transition-all"
                   data-testid="hero-whatsapp-btn"
                 >
                   Talk to our team
@@ -152,7 +137,7 @@ const Home = () => {
                     type="button"
                     onClick={() => setActiveSlide(idx)}
                     className={`h-1.5 rounded-full transition-all ${
-                      idx === activeSlide ? 'w-6 bg-[#1db4c5]' : 'w-3 bg-zinc-700'
+                      idx === activeSlide ? 'w-6 bg-[#ffd33d]' : 'w-3 bg-zinc-700'
                     }`}
                     aria-label={`Go to slide ${idx + 1}`}
                   />
@@ -176,8 +161,8 @@ const Home = () => {
       <SectionEffect variant="bento" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
-            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-cyan-300 mb-3">
-              Why Swami Dev Hub
+            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-yellow-300 mb-3">
+              Why Swami Web
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
               A bento of benefits for fast‑growing brands
@@ -186,7 +171,7 @@ const Home = () => {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 auto-rows-[210px]">
             <motion.div
               whileHover={{ y: -6 }}
-              className="lg:col-span-2 lg:row-span-2 rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800 border border-cyan-500/20 p-6 sm:p-8 flex flex-col justify-between"
+              className="lg:col-span-2 lg:row-span-2 rounded-3xl bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800 border border-yellow-500/20 p-6 sm:p-8 flex flex-col justify-between"
             >
               <div>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-4 text-white">
@@ -197,30 +182,30 @@ const Home = () => {
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-3">
-                    <span className="text-cyan-300 mt-1.5">✓</span>
+                    <span className="text-yellow-300 mt-1.5">✓</span>
                     <span className="text-zinc-300 text-sm">Rapid deployment with zero compromise on quality</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-cyan-300 mt-1.5">✓</span>
+                    <span className="text-yellow-300 mt-1.5">✓</span>
                     <span className="text-zinc-300 text-sm">Pre-optimized templates customized to your brand</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-cyan-300 mt-1.5">✓</span>
+                    <span className="text-yellow-300 mt-1.5">✓</span>
                     <span className="text-zinc-300 text-sm">Domain, hosting, and SSL configured automatically</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-cyan-300 mt-1.5">✓</span>
+                    <span className="text-yellow-300 mt-1.5">✓</span>
                     <span className="text-zinc-300 text-sm">Mobile-responsive design included by default</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-cyan-300 mt-1.5">✓</span>
+                    <span className="text-yellow-300 mt-1.5">✓</span>
                     <span className="text-zinc-300 text-sm">SEO-ready structure and fast loading times</span>
                   </li>
                 </ul>
               </div>
               <div className="flex items-center justify-between text-sm text-zinc-400 pt-4 border-t border-zinc-800">
                 <span>Typical turnaround</span>
-                <span className="text-cyan-300 font-semibold">24 hours</span>
+                <span className="text-yellow-300 font-semibold">24 hours</span>
               </div>
             </motion.div>
 
@@ -234,7 +219,7 @@ const Home = () => {
                   Everything bundled — secure, performant hosting with SSL and domain setup.
                 </p>
               </div>
-              <span className="mt-4 inline-flex items-center text-xs font-semibold text-cyan-300">
+              <span className="mt-4 inline-flex items-center text-xs font-semibold text-yellow-300">
                 Included in every package
               </span>
             </motion.div>
@@ -254,22 +239,22 @@ const Home = () => {
 
             <motion.div
               whileHover={{ y: -6 }}
-              className="rounded-3xl bg-gradient-to-br from-cyan-500/10 via-cyan-500/5 to-zinc-900 border border-cyan-500/30 p-6 flex flex-col justify-between"
+              className="rounded-3xl bg-gradient-to-br from-yellow-500/10 via-yellow-500/5 to-zinc-900 border border-yellow-500/30 p-6 flex flex-col justify-between"
             >
               <div>
                 <h3 className="font-semibold mb-3 text-white">Trusted by businesses</h3>
                 <p className="text-sm text-zinc-200 mb-4">
-                  From local brands to digital‑first startups, Swami Dev Hub powers high‑impact web experiences.
+                  From local brands to digital‑first startups, Swami Web powers high‑impact web experiences.
                 </p>
               </div>
               <div className="space-y-1 text-sm">
                 <p className="flex justify-between text-zinc-300">
                   <span>Web projects shipped</span>
-                  <span className="font-semibold text-cyan-300">150+</span>
+                  <span className="font-semibold text-yellow-300">150+</span>
                 </p>
                 <p className="flex justify-between text-zinc-300">
                   <span>Average client rating</span>
-                  <span className="font-semibold text-cyan-300">4.9/5</span>
+                  <span className="font-semibold text-yellow-300">4.9/5</span>
                 </p>
               </div>
             </motion.div>
@@ -301,8 +286,8 @@ const Home = () => {
               transition={{ type: 'spring', stiffness: 220, damping: 18 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-[#1db4c5]/20 rounded-2xl blur-2xl opacity-60" />
-              <div className="relative bg-zinc-900 rounded-2xl overflow-hidden border border-cyan-500/20 aspect-[4/3] min-h-[18rem] max-h-[24rem]">
+              <div className="absolute inset-0 bg-[#ffd33d]/20 rounded-2xl blur-2xl opacity-60" />
+              <div className="relative bg-zinc-900 rounded-2xl overflow-hidden border border-yellow-500/20 aspect-[4/3] min-h-[18rem] max-h-[24rem]">
                 <img
                   src={siteInfo.aboutIntroImagePath}
                   alt="Professional web design and technology"
@@ -319,14 +304,14 @@ const Home = () => {
                 Professionally Designed Websites For Growing Brands
               </h2>
               <p className="text-zinc-300 mb-6 leading-relaxed">
-                At Swami Dev Hub, we specialise in building sleek, conversion‑focused websites that reflect your brand and clearly communicate your services. Whether you are just starting out or scaling up, we help you create a modern, user‑friendly presence that builds trust.
+                At Swami Web, we specialise in building sleek, conversion‑focused websites that reflect your brand and clearly communicate your services. Whether you are just starting out or scaling up, we help you create a modern, user‑friendly presence that builds trust.
               </p>
               <p className="text-zinc-300 mb-8 leading-relaxed">
                 Our process is streamlined for speed without sacrificing quality. Every project includes design, content structure, essential on‑page SEO, and technical setup—so you go live quickly with a site that looks professional and performs reliably.
               </p>
               <Link
-                to="/about-swami-dev-hub"
-                className="inline-flex items-center space-x-2 text-cyan-300 font-semibold hover:text-white transition"
+                to="/about-swami-web"
+                className="inline-flex items-center space-x-2 text-yellow-300 font-semibold hover:text-white transition"
                 data-testid="discover-more-btn"
               >
                 <span>Discover More</span>
@@ -346,7 +331,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-cyan-300 mb-3">
+            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-yellow-300 mb-3">
               How We Work
             </p>
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
@@ -397,57 +382,17 @@ const Home = () => {
                     transition={{ delay: idx * 0.08 }}
                     className="flex gap-4 group"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#1db4c5]/15 to-[#1db4c5]/5 border border-cyan-500/30 flex items-center justify-center transition-all group-hover:border-cyan-500/50 group-hover:bg-[#1db4c5]/20">
-                      <span className="text-cyan-300 font-bold text-sm tracking-wider">{item.num}</span>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-[#ffd33d]/15 to-[#ffd33d]/5 border border-yellow-500/30 flex items-center justify-center transition-all group-hover:border-yellow-500/50 group-hover:bg-[#ffd33d]/20">
+                      <span className="text-yellow-300 font-bold text-sm tracking-wider">{item.num}</span>
                     </div>
                     <div className="flex-1 pt-1">
-                      <h4 className="font-semibold text-white mb-1.5 text-base group-hover:text-cyan-300 transition-colors">{item.title}</h4>
+                      <h4 className="font-semibold text-white mb-1.5 text-base group-hover:text-yellow-300 transition-colors">{item.title}</h4>
                       <p className="text-sm text-zinc-400 leading-relaxed">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </SectionEffect>
-
-      {/* Technology Stack Section */}
-      <SectionEffect variant="tech" className="py-20" data-testid="tech-stack-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Our Technology Stack for Design
-            </h2>
-            <p className="text-zinc-300 max-w-2xl mx-auto">
-              We use the latest technologies to build fast, secure, and scalable websites
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {techStack.map((tech, index) => {
-              const Icon = iconMap[tech.icon];
-              return (
-                <motion.div
-                  key={tech.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-zinc-900 rounded-2xl p-6 text-center shadow-lg shadow-black/60 hover:shadow-[0_0_40px_rgba(0,0,0,0.9)] border border-zinc-800 transition-all group"
-                  data-testid={`tech-card-${tech.name.toLowerCase()}`}
-                >
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-r ${tech.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="font-semibold text-white">{tech.name}</h3>
-                </motion.div>
-              );
-            })}
           </div>
         </div>
       </SectionEffect>
@@ -462,7 +407,7 @@ const Home = () => {
             className="text-center mb-12"
           >
             <div className="inline-flex items-center space-x-2 bg-zinc-900 px-6 py-3 rounded-full mb-4 border border-zinc-700">
-              <Star className="w-5 h-5 fill-cyan-400 text-cyan-400" />
+              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
               <span className="font-bold text-white">EXCELLENT</span>
               <span className="text-zinc-300">Based on 168 reviews</span>
             </div>
@@ -505,13 +450,13 @@ const Home = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="flex-1 px-6 py-4 rounded-xl border border-zinc-700 bg-black/60 focus:outline-none focus:ring-2 focus:ring-[#1db4c5] text-white placeholder:text-zinc-500"
+                className="flex-1 px-6 py-4 rounded-xl border border-zinc-700 bg-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffd33d] text-white placeholder:text-zinc-500"
                 data-testid="newsletter-email-input"
               />
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#1db4c5] text-black px-8 py-4 rounded-xl font-semibold hover:bg-cyan-400 transition disabled:opacity-50 flex items-center justify-center space-x-2"
+                className="bg-[#ffd33d] text-black px-8 py-4 rounded-xl font-semibold hover:bg-yellow-400 transition disabled:opacity-50 flex items-center justify-center space-x-2"
                 data-testid="newsletter-submit-btn"
               >
                 <span>{isSubmitting ? 'Subscribing...' : 'Subscribe'}</span>

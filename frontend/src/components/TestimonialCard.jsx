@@ -14,12 +14,12 @@ const TestimonialCard = ({ name, rating, text, index }) => {
     >
       <div className="flex items-center space-x-1 mb-3">
         {[...Array(rating)].map((_, i) => (
-          <Star key={i} className="w-5 h-5 fill-cyan-400 text-cyan-400" />
+          <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
         ))}
       </div>
       <p className="text-zinc-200 mb-4 leading-relaxed">{text}</p>
       <div className="flex items-center space-x-3">
-        <div className="w-10 h-10 bg-[#1db4c5] rounded-xl flex items-center justify-center text-black font-semibold shadow-md shadow-cyan-500/40">
+        <div className="w-10 h-10 bg-[#ffd33d] rounded-xl flex items-center justify-center text-black font-semibold shadow-md shadow-yellow-500/40">
           {name.charAt(0)}
         </div>
         <div>
