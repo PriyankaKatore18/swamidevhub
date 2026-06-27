@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 import { siteInfo } from '../data/siteData';
 
 const PackageCard = ({ pkg, index }) => {
-  const whatsappMessage = `Hi! I'm interested in the ${pkg.name} package (Rs. ${pkg.price}). Can you provide more details?`;
+  const whatsappMessage = `Hi! I'm interested in the ${pkg.name} package (₹${pkg.price}). Can you provide more details?`;
   const whatsappLink = `https://wa.me/${siteInfo.whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -29,7 +29,7 @@ const PackageCard = ({ pkg, index }) => {
         <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
         <div className="flex items-baseline mb-6">
           <span className="text-4xl font-extrabold text-[#ffd33d]">
-            Rs. {pkg.price}
+            ₹{pkg.price}
           </span>
           <span className="text-zinc-400 ml-2">/-</span>
         </div>
